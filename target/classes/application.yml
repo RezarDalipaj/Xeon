@@ -1,0 +1,42 @@
+spring:
+  main:
+    allow-circular-references: true
+  application:
+    name: ecohack-template
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecoFoodDb?createDatabaseIfNotExist=true
+    username: ecoHack
+    password: ecoPassword
+
+
+app:
+  jwt:
+    # Signing key for HS512 algorithm
+    # In http://www.allkeysgenerator.com/ you can generate all kinds of keys
+    secret:
+      access: geekSquad1617478ibsdcfidsbvnsdvbnvuinyvbnkbfisdigvbnsdvnfvusdbncdsuvsdnvbdsvdsuibyuvbsdfuy
+      refresh: fmwpiforenodnfofnoufmudsonrfnsdofnweuofnsdoufwnvmsduofehffhnohryjhpjypjhpympd[knt[okdfjsjg
+    expiration:
+      minutes:
+        access: 10
+        refresh: 60
+  cors:
+    allowed-origins: "*"
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    # org.hibernate.SQL: DEBUG
+
+#server:
+#  ssl:
+#    key-store: classpath:echoHack.p12
+#    key-store-password: password
+#    key-store-type: pkcs12
+#    key-alias: echoHack
+#    key-password: password
+#  port: 8443
