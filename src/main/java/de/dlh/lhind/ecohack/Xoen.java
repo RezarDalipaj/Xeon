@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EcoHackSpringBoot {
+public class Xoen {
 
     public static void main(String[] args) {
-        SpringApplication.run(EcoHackSpringBoot.class, args);
+        SpringApplication.run(Xoen.class, args);
     }
 }

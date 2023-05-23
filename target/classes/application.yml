@@ -2,15 +2,18 @@ spring:
   main:
     allow-circular-references: true
   application:
-    name: ecohack-template
+    name: xoen-app
   jpa:
     hibernate:
       ddl-auto: update
     open-in-view: false
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQLDialect
   datasource:
-    url: jdbc:mysql://localhost:3306/ecoFoodDb?createDatabaseIfNotExist=true
-    username: ecoHack
-    password: ecoPassword
+    url: jdbc:mysql://localhost:3306/xoenDb?createDatabaseIfNotExist=true
+    username: xoenUser
+    password: xoenPassword
 
 
 app:
