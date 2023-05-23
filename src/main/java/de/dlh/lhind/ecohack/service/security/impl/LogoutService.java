@@ -47,6 +47,6 @@ public class LogoutService implements ILogoutService {
             return LogoutDto.builder()
                 .logoutMessage(Constants.LOGOUT_SUCCESS)
                 .build();
-        throw new UnAuthorizedException("Could not logout! Invalid token!");
+        throw new UnAuthorizedException(Constants.LOGOUT_ERROR);
     }
 }
